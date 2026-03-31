@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma House | Authentic North Indian Cuisine in Ghaziabad</title>
+    <meta name="description"
+        content="Aroma House offers authentic, affordable, and delicious North Indian comfort food in a family-friendly environment. Visit us in DLF Ankur Vihar, Ghaziabad.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Mobile Sticky Call CTA -->
+    <a href="tel:09711681315" class="mobile-call-btn hidden-desktop" aria-label="Call Now">
+        📞 Call Now
+    </a>
+
+    <!-- Header / Navigation -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Aroma House<span>.</span></a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary btn-sm">Order Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <div class="trust-badge">
+                    ⭐ 4.1 Rating | 200+ Happy Customers
+                </div>
+                <h1 class="hero-title">Taste the Real Flavor <br>of North India</h1>
+                <p class="hero-subtitle">Affordable, delicious meals for every family moment in the heart of Ghaziabad.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                    <a href="#menu" class="btn btn-outline">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-content fade-in-left">
+                <h2 class="section-title">Where Taste Meets Comfort</h2>
+                <div class="title-underline"></div>
+                <p class="text-body mt-4">At Aroma House, we believe in the magic of simple, satisfying meals. Located
+                    in DLF Ankur Vihar, we are your neighborhood's go-to spot for authentic North Indian comfort food.
+                </p>
+                <p class="text-body mt-3">Whether you're craving a rich Biryani, smoky Chaap, or a homely family meal,
+                    our fresh ingredients and traditional recipes ensure every bite feels like home. Enjoy a relaxed,
+                    family-friendly dining experience without breaking the bank.</p>
+
+                <div class="about-features mt-5">
+                    <div class="feature-item">
+                        <span class="feature-icon">🌿</span>
+                        <p>Fresh Ingredients</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🥘</span>
+                        <p>Authentic Recipes</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">👨‍👩‍👧‍👦</span>
+                        <p>Family Atmosphere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image fade-in-right">
+                <!-- Using the generated biryani image here or a CSS styled box if missing -->
+                <div class="image-wrapper">
+                    <img src="assets/images/biryani.png" alt="Delicious North Indian Food at Aroma House"
+                        class="rounded-image shadow-lg"
+                        onerror="this.src='https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800'; this.onerror=null;">
+                    <div class="floating-card">
+                        <span class="price-tag">₹200 - ₹400</span>
+                        <p>Per Person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Our Specialities</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mt-3">Explore our most loved dishes, prepared fresh daily.</p>
+            </div>
+
+            <div class="menu-grid mt-5">
+                <!-- Category 1 -->
+                <div class="menu-card fade-in-up delay-1">
+                    <div class="menu-card-img biryani-img"></div>
+                    <div class="menu-card-content">
+                        <div class="menu-header">
+                            <h3>Biryani Specials</h3>
+                            <span class="price-indicator">₹₹</span>
+                        </div>
+                        <p>Aromatic, slow-cooked basmati rice with marinated meats or fresh vegetables, served with
+                            raita.</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-3 w-100">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="menu-card fade-in-up delay-2">
+                    <div class="menu-card-img curry-img"></div>
+                    <div class="menu-card-content">
+                        <div class="menu-header">
+                            <h3>Main Course</h3>
+                            <span class="price-indicator">₹₹</span>
+                        </div>
+                        <p>Rich and creamy curries including Dal Makhani, Butter Chicken, and Paneer delicacies.</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-3 w-100">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="menu-card fade-in-up delay-3">
+                    <div class="menu-card-img chaap-img"></div>
+                    <div class="menu-card-content">
+                        <div class="menu-header">
+                            <h3>Chaap & Starters</h3>
+                            <span class="price-indicator">₹</span>
+                        </div>
+                        <p>Smoky tandoori soya chaap, and flavorful starters to kick-off your memorable meal.</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-3 w-100">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="menu-card fade-in-up delay-4">
+                    <div class="menu-card-img combo-img"></div>
+                    <div class="menu-card-content">
+                        <div class="menu-header">
+                            <h3>Family Combos</h3>
+                            <span class="price-indicator">₹₹</span>
+                        </div>
+                        <p>Perfectly portioned multi-course meals designed to satisfy the whole family.</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-3 w-100">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Why Dine With Us</h2>
+                <div class="title-underline mx-auto"></div>
+            </div>
+
+            <div class="features-grid mt-5">
+                <div class="feature-box fade-in-up delay-1">
+                    <div class="icon-circle">🤤</div>
+                    <h4>Delicious & Authentic</h4>
+                    <p>Consistent, mouth-watering North Indian flavors.</p>
+                </div>
+                <div class="feature-box fade-in-up delay-2">
+                    <div class="icon-circle">💰</div>
+                    <h4>Budget-Friendly</h4>
+                    <p>Great portions at prices that won't empty your wallet.</p>
+                </div>
+                <div class="feature-box fade-in-up delay-3">
+                    <div class="icon-circle">👨‍👩‍👧‍👦</div>
+                    <h4>Family-Friendly</h4>
+                    <p>A welcoming environment perfect for all age groups.</p>
+                </div>
+                <div class="feature-box fade-in-up delay-4">
+                    <div class="icon-circle">🛵</div>
+                    <h4>Convenient Options</h4>
+                    <p>Dine-in, Drive-through, and No-contact delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="reviews section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mt-3">Don't just take our word for it—listen to our happy diners.</p>
+            </div>
+
+            <div class="reviews-grid mt-5">
+                <div class="review-card fade-in-up delay-1">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Loved the taste and affordability! The perfect spot for a family lunch. The
+                        biryani was absolutely fantastic."</p>
+                    <div class="reviewer">
+                        <div class="avatar">R</div>
+                        <div>
+                            <h5>Rahul S.</h5>
+                            <span>Local Resident</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card fade-in-up delay-2">
+                    <div class="stars">★★★★☆</div>
+                    <p class="review-text">"Friendly service and great ambience for family dinners. They really care
+                        about their customers and the food quality is improving every visit."</p>
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div>
+                            <h5>Anjali M.</h5>
+                            <span>Food Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card fade-in-up delay-3">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Best place in Ankur Vihar for authentic North Indian. The chaap varieties
+                        are amazing and totally value for money!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">V</div>
+                        <div>
+                            <h5>Vikas K.</h5>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-left">
+                    <h2 class="section-title">Visit Us Today</h2>
+                    <div class="title-underline"></div>
+                    <p class="mt-4 text-body">We're ready to serve you. Drop by for a meal, or order from the comfort of
+                        your home.</p>
+
+                    <div class="info-list mt-5">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>D-1/6, Jindal Rd, near Amba Chowk, Ankur Vihar, DLF Ankur Vihar, Loni, Ghaziabad, UP
+                                    201102</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p><a href="tel:09711681315">097116 81315</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⏰</span>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Open Daily • closes at 11 PM</p>
+                                <span class="status-badge">🟢 Open Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map fade-in-right">
+                    <!-- Embedded Map Placeholder styled beautifully -->
+                    <div class="map-container shadow-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.54!2d77.27!3d28.74!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ0JzI0LjAiTiA3N8KwMTYnMTIuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container text-center fade-in-up">
+            <h2>Craving Something Delicious?</h2>
+            <p>Order now to experience the best North Indian food in Ghaziabad.</p>
+            <div class="cta-buttons mt-4">
+                <a href="#menu" class="btn btn-primary btn-lg">Order Now</a>
+                <a href="tel:09711681315" class="btn btn-outline-light btn-lg">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Aroma House<span>.</span></h3>
+                    <p>Delicious Moments, Served Fresh.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Aroma House. All Rights Reserved.</p>
+                <p class="small-text">Built with ♥ for great taste.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
