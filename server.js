@@ -5,6 +5,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN || '';
 const DATA_DIR = path.join(__dirname, 'data');
 const SITE_DATA_PATH = path.join(DATA_DIR, 'site-content.json');
 const INQUIRIES_PATH = path.join(DATA_DIR, 'inquiries.json');
@@ -25,6 +26,28 @@ app.get('/api/site-content', async (_req, res) => {
     res.status(500).json({ error: 'Could not load site content' });
   }
 });
+
+function isAdminRequest(req) {
+  if (!ADMIN_TOKEN) {
+    return true;
+  }
+
+  const headerToken = req.get('x-admin-token');
+  const bearerToken = req.get('authorization')?.startsWith('Bearer ')
+    ? req.get('authorization').slice(7)
+    : '';
+  const queryToken = typeof req.query.token === 'string' ? req.query.token : '';
+
+  return [headerToken, bearerToken, queryToken].some((token) => token === ADMIN_TOKEN);
+}
+
+function requireAdminToken(req, res, next) {
+  if (isAdminRequest(req)) {
+    return next();
+  }
+
+  return res.status(401).json({ error: 'Unauthorized' });
+}
 
 app.post('/api/inquiries', async (req, res) => {
   const { name, phone, message } = req.body || {};
@@ -66,6 +89,25 @@ app.post('/api/inquiries', async (req, res) => {
   } catch (error) {
     return res.status(500).json({ error: 'Failed to save inquiry' });
   }
+});
+
+app.get('/api/admin/inquiries', requireAdminToken, async (_req, res) => {
+  try {
+    const raw = await fs.readFile(INQUIRIES_PATH, 'utf8');
+    const inquiries = JSON.parse(raw);
+
+    return res.json({
+      ok: true,
+      total: Array.isArray(inquiries) ? inquiries.length : 0,
+      inquiries: Array.isArray(inquiries) ? inquiries : []
+    });
+  } catch (error) {
+    return res.json({ ok: true, total: 0, inquiries: [] });
+  }
+});
+
+app.get(['/admin', '/admin.html'], (_req, res) => {
+  res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
 app.get('*', (_req, res) => {

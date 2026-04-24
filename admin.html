@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma House Admin</title>
+    <meta name="description" content="Admin dashboard for Aroma House orders and contact inquiries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <main class="admin-shell">
+        <section class="admin-hero">
+            <div>
+                <p class="eyebrow">Aroma House Admin</p>
+                <h1>Orders and contact requests in one place</h1>
+                <p class="admin-copy">Sign in with your admin token to view, search, and export all form submissions.</p>
+            </div>
+            <div class="hero-stats" id="hero-stats">
+                <div class="stat-card">
+                    <span>Total</span>
+                    <strong id="total-count">0</strong>
+                </div>
+                <div class="stat-card">
+                    <span>Latest</span>
+                    <strong id="latest-date">-</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel auth-panel" id="auth-panel">
+            <div class="panel-header">
+                <h2>Admin Access</h2>
+                <p>Enter the token configured in your backend environment.</p>
+            </div>
+            <form id="admin-login-form" class="auth-form">
+                <input id="admin-token" type="password" placeholder="Admin token" autocomplete="current-password" required>
+                <button type="submit" class="btn-primary">Open Dashboard</button>
+            </form>
+            <p id="auth-message" class="message"></p>
+        </section>
+
+        <section class="panel dashboard-panel hidden" id="dashboard-panel">
+            <div class="panel-toolbar">
+                <div class="search-wrap">
+                    <input id="search-input" type="search" placeholder="Search name, phone, or message">
+                </div>
+                <div class="toolbar-actions">
+                    <button type="button" id="refresh-btn" class="btn-secondary">Refresh</button>
+                    <button type="button" id="export-btn" class="btn-secondary">Export CSV</button>
+                    <button type="button" id="logout-btn" class="btn-ghost">Log out</button>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table class="inquiries-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Message</th>
+                            <th>Created</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inquiries-body"></tbody>
+                </table>
+            </div>
+            <p id="empty-state" class="empty-state hidden">No inquiries yet.</p>
+            <p id="dashboard-message" class="message"></p>
+        </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

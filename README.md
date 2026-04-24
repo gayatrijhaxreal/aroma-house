@@ -29,6 +29,14 @@ The server hosts frontend + backend together.
 - `GET /api/health`
 - `GET /api/site-content`
 - `POST /api/inquiries`
+- `GET /api/admin/inquiries`
+
+## 2.1) Admin dashboard
+
+- Open `/admin` in the browser.
+- Enter the admin token when prompted.
+- The dashboard shows all inquiries, lets you search them, and export them as CSV.
+- If `ADMIN_TOKEN` is set in the environment, the API requires the same token in the request header.
 
 Inquiry body example:
 
@@ -81,3 +89,10 @@ git push -u origin main
 ```
 
 If repository already exists, skip `git init` and `git remote add origin`.
+
+## 6) Environment variables
+
+```bash
+PORT=3000
+ADMIN_TOKEN=your-secure-token
+```
