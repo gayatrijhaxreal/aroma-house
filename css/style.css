@@ -299,6 +299,65 @@ ul {
     opacity: 0.9;
 }
 
+.contact-form-card {
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-card h3 {
+    font-size: 1.5rem;
+}
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-row label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-row input,
+.form-row textarea {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 12px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    background-color: #fff;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 3px rgba(211, 84, 0, 0.18);
+}
+
+.inquiry-status {
+    min-height: 1.2em;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.inquiry-status.success {
+    color: #148247;
+}
+
+.inquiry-status.error {
+    color: #b32d2d;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;

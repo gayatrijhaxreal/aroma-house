@@ -1,0 +1,48 @@
+{
+  "menu": [
+    {
+      "title": "Biryani Specials",
+      "priceTier": "₹₹",
+      "description": "Aromatic, slow-cooked basmati rice with marinated meats or fresh vegetables, served with raita.",
+      "imageClass": "biryani-img"
+    },
+    {
+      "title": "Main Course",
+      "priceTier": "₹₹",
+      "description": "Rich and creamy curries including Dal Makhani, Butter Chicken, and Paneer delicacies.",
+      "imageClass": "curry-img"
+    },
+    {
+      "title": "Chaap & Starters",
+      "priceTier": "₹",
+      "description": "Smoky tandoori soya chaap and flavorful starters to kick-off your memorable meal.",
+      "imageClass": "chaap-img"
+    },
+    {
+      "title": "Family Combos",
+      "priceTier": "₹₹",
+      "description": "Perfectly portioned multi-course meals designed to satisfy the whole family.",
+      "imageClass": "combo-img"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Rahul S.",
+      "role": "Local Resident",
+      "rating": 5,
+      "text": "Loved the taste and affordability. The perfect spot for a family lunch. The biryani was absolutely fantastic."
+    },
+    {
+      "name": "Anjali M.",
+      "role": "Food Enthusiast",
+      "rating": 4,
+      "text": "Friendly service and great ambience for family dinners. They really care about their customers and food quality."
+    },
+    {
+      "name": "Vikas K.",
+      "role": "Student",
+      "rating": 5,
+      "text": "Best place in Ankur Vihar for authentic North Indian food. The chaap varieties are amazing and value for money."
+    }
+  ]
+}
